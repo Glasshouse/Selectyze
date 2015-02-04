@@ -36,7 +36,7 @@
 			constructList($this);
 			$this.hide();
 			$this.after(DivSelect);
-			DivSelect.html('<a href="#" rel="'+optionselected.val()+'" class="selectyzeValue">'+optionselected.text()+'</a>');
+			DivSelect.html('<a href="#" title="'+optionselected.val()+'" rel="'+optionselected.val()+'" class="selectyzeValue">'+optionselected.text()+'</a>');
 
 			UlSelect.appendTo(DivSelect).html(liHtml);
 			$('.DivSelectyze').each(function(i,el){
