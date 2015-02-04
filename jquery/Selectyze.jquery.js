@@ -58,6 +58,7 @@
 				e.preventDefault();
 				DivSelect.find('a.selectyzeValue').text($(this).text());
 				DivSelect.find('a.selectyzeValue').attr('rel', $(this).attr('rel'));
+				DivSelect.find('a.selectyzeValue').attr('title', $(this).text());
 				$this.val($(this).attr('rel'));           
 				$this.trigger('change');         
 				if (!opts.preventClose) {
